@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OM SHAI CONSTRUCTION - Find Work Daily</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              brand: {
+                blue: '#0f172a', // Slate 900
+                yellow: '#f59e0b', // Amber 500
+                orange: '#ea580c', // Orange 600
+                light: '#f1f5f9', // Slate 100
+              }
+            },
+            animation: {
+              'scroll-text': 'scroll 30s linear infinite',
+              'fade-in': 'fadeIn 0.5s ease-out',
+              'shake': 'shake 0.5s ease-in-out',
+              'moveAround': 'moveAround 2s infinite ease-in-out',
+            },
+            keyframes: {
+              scroll: {
+                '0%': { transform: 'translateX(100%)' },
+                '100%': { transform: 'translateX(-100%)' },
+              },
+              fadeIn: {
+                '0%': { opacity: '0', transform: 'translateY(10px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              shake: {
+                '0%, 100%': { transform: 'translateX(0) scale(1.05)' },
+                '25%': { transform: 'translateX(-5px) scale(1.05)' },
+                '75%': { transform: 'translateX(5px) scale(1.05)' },
+              },
+              moveAround: {
+                '0%': { transform: 'translate(0, 0) scale(1.05)' },
+                '25%': { transform: 'translate(5px, -5px) scale(1.05)' },
+                '50%': { transform: 'translate(0, 0) scale(1.05)' },
+                '75%': { transform: 'translate(-5px, 5px) scale(1.05)' },
+                '100%': { transform: 'translate(0, 0) scale(1.05)' },
+              }
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f1f5f9;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #cbd5e1;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #94a3b8;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.556.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.31.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-slate-50 text-slate-900">
+    <div id="root"></div>
+  </body>
+</html>
